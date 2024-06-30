@@ -28,7 +28,9 @@ body {
   }
   
   header img.logo {
-    height: 70px;
+    height: 70px; /* Ajustado para pantallas más pequeñas */
+    width: auto; /* Ajusta el ancho automáticamente */
+    border-radius: 50%; /* Redondea el logo */
   }
   
   header nav ul {
