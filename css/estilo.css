@@ -177,3 +177,18 @@ footer .social a:hover {
     height: 200px; /* Tamaño de imagen para pantallas pequeñas */
   }
 }
+.btn {
+  display: inline-block;
+  background: #009688;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #00796b;
+}
