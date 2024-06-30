@@ -1,136 +1,179 @@
 body {
-    font-family: 'Mitr', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f9f9f9;
-  }
-  
-  header {
-    background: linear-gradient(to right, #00bcd4, #009688);
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  header img.logo {
-    height: 90px;
-    width: 90px;
-    border-radius: 80%;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: #ffeb3b;
-  }
-  
-  main {
-    padding-top: 100px;
-    background-color: #f9f9f9;
-  }
-  
-  .section {
-    padding: 2rem 0;
-    background: white;
-    margin: 1rem 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .section:hover {
-    background-color: #e0f7fa;
-    transform: scale(1.02);
-  }
-  
+  font-family: 'Mitr', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: linear-gradient(to right, #00bcd4, #009688);
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Añadido para espaciar el contenido */
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos en el header */
+  align-items: center;
+}
+
+header img.logo {
+  height: 70px; /* Ajustado para pantallas más pequeñas */
+  width: auto; /* Ajusta el ancho automáticamente */
+  border-radius: 50%; /* Redondea el logo */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 15px; /* Espacio entre elementos del menú */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffeb3b;
+}
+
+main {
+  padding-top: 120px; /* Espacio para el header fijo */
+  background-color: #f9f9f9;
+}
+
+.section {
+  padding: 2rem 0;
+  background: white;
+  margin: 1rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.02);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.section h2 {
+  color: #00bcd4;
+  border-bottom: 2px solid #00bcd4;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto; /* Ajustado para mantener la proporción de las imágenes */
+  object-fit: cover;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem; /* Añadido para espaciar el contenido */
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos en el footer */
+  align-items: center;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+footer .social a:hover {
+  color: #ffeb3b;
+}
+
+@media (min-width: 768px) {
   .container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
+    width: 80%;
   }
-  
-  .section h2 {
-    color: #00bcd4;
-    border-bottom: 2px solid #00bcd4;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
+
+  header img.logo {
+    height: 90px; /* Tamaño del logo para pantallas más grandes */
   }
-  
+
+  nav ul {
+    justify-content: flex-end; /* Alineación a la derecha para pantallas grandes */
+  }
+
+  nav ul li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
   .section img {
-    max-width: 100%;
-    height: 300px; /* Establece un tamaño fijo para todas las imágenes */
-    object-fit: cover; /* Asegura que la imagen se ajuste correctamente */
-    display: block;
-    margin: 1rem 0;
-    border-radius: 5px;
+    height: 250px; /* Tamaño de imagen para pantallas más grandes */
   }
-  
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+  header .container {
+    flex-direction: column; /* Alineación vertical en pantallas pequeñas */
+    align-items: center; /* Centrado de elementos */
   }
-  
-  footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+
+  nav ul {
+    flex-wrap: wrap; /* Envuelve elementos del menú */
+    justify-content: center; /* Centrado de elementos del menú */
   }
-  
-  footer .social a {
-    color: white;
-    margin: 0 0.5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
+
+  nav ul li {
+    margin-right: 10px; /* Espacio entre elementos del menú */
+    margin-bottom: 10px; /* Espacio entre elementos del menú */
   }
-  
-  footer .social a:hover {
-    color: #ffeb3b;
+
+  main {
+    padding-top: 180px; /* Espacio para el header fijo */
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      width: 80%;
-    }
+
+  .section img {
+    height: 200px; /* Tamaño de imagen para pantallas pequeñas */
   }
-  
-  @media (min-width: 1024px) {
-    .container {
-      width: 70%;
-    }
-  }
-  
+}
