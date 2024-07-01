@@ -193,3 +193,14 @@ footer .social a:hover {
 .btn:hover {
   background: #00796b;
 }
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container img {
+  width: 48%; /* Ajusta el ancho de las imágenes para que se coloquen una al lado de la otra */
+  height: auto;
+  border-radius: 5px;
+}
+
