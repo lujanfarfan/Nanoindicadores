@@ -5,9 +5,9 @@ body {
     padding: 0;
     color: #333;
     background-color: #f9f9f9;
-}
-
-header {
+  }
+  
+  header {
     background: linear-gradient(to right, #00bcd4, #009688);
     color: white;
     padding: 1rem 0;
@@ -16,78 +16,76 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-
-header .container {
+  }
+  
+  header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
-    text-align: center; /* Centrar contenido horizontalmente */
-}
-
-header img.logo {
-    height: 70px;
-    width: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto; /* Centrar logo */
-}
-
-header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header img.logo {
+    height: 70px; /* Ajustado para pantallas más pequeñas */
+    width: auto; /* Ajusta el ancho automáticamente */
+    border-radius: 50%; /* Redondea el logo */
+  }
+  
+  header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centrar la barra de navegación */
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     margin-left: 2rem;
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s;
-}
-
-header nav ul li a:hover {
+  }
+  
+  header nav ul li a:hover {
     color: #ffeb3b;
-}
-
-main {
+  }
+  
+  main {
     padding: 2rem 0;
-    margin-top: 130px; /* Ajustar para acomodar el header fijo */
-}
-
-.section {
+    margin-top: 80px;
+  }
+  
+  .section {
     background: white;
     padding: 2rem 1rem;
     margin: 1rem 0;
-}
-
-.container {
+  }
+  
+  .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-h2 {
+  }
+  
+  h2 {
     color: #009688;
     margin-bottom: 1rem;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: disc;
     margin: 1rem 0 1rem 2rem;
-}
-
-footer {
+  }
+  
+  footer {
     background: #00bcd4;
     color: white;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-}
-
+  }
   
